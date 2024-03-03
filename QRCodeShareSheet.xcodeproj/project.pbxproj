@@ -11,18 +11,58 @@
 		78F2F2432B91677000CDF3EC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F2F2422B91677000CDF3EC /* ContentView.swift */; };
 		78F2F2452B91677300CDF3EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78F2F2442B91677300CDF3EC /* Assets.xcassets */; };
 		78F2F2482B91677300CDF3EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78F2F2472B91677300CDF3EC /* Preview Assets.xcassets */; };
+		78F2F2552B91680C00CDF3EC /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F2F2542B91680C00CDF3EC /* ShareViewController.swift */; };
+		78F2F2582B91680C00CDF3EC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78F2F2562B91680C00CDF3EC /* MainInterface.storyboard */; };
+		78F2F25C2B91680C00CDF3EC /* Share.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 78F2F2522B91680C00CDF3EC /* Share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		78F2F25A2B91680C00CDF3EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78F2F2352B91676F00CDF3EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78F2F2512B91680C00CDF3EC;
+			remoteInfo = Share;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		78F2F2602B91680C00CDF3EC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				78F2F25C2B91680C00CDF3EC /* Share.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7861AE3A2B941C8D00BE24B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7861AE3B2B94268A00BE24B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78F2F23D2B91677000CDF3EC /* QRCodeShareSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRCodeShareSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F2F2402B91677000CDF3EC /* QRCodeShareSheetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeShareSheetApp.swift; sourceTree = "<group>"; };
 		78F2F2422B91677000CDF3EC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		78F2F2442B91677300CDF3EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78F2F2472B91677300CDF3EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		78F2F2522B91680C00CDF3EC /* Share.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Share.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		78F2F2542B91680C00CDF3EC /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		78F2F2572B91680C00CDF3EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		78F2F2592B91680C00CDF3EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		78F2F23A2B91677000CDF3EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78F2F24F2B91680C00CDF3EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				78F2F23F2B91677000CDF3EC /* QRCodeShareSheet */,
+				78F2F2532B91680C00CDF3EC /* Share */,
 				78F2F23E2B91677000CDF3EC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				78F2F23D2B91677000CDF3EC /* QRCodeShareSheet.app */,
+				78F2F2522B91680C00CDF3EC /* Share.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,6 +93,7 @@
 		78F2F23F2B91677000CDF3EC /* QRCodeShareSheet */ = {
 			isa = PBXGroup;
 			children = (
+				7861AE3A2B941C8D00BE24B5 /* Info.plist */,
 				78F2F2402B91677000CDF3EC /* QRCodeShareSheetApp.swift */,
 				78F2F2422B91677000CDF3EC /* ContentView.swift */,
 				78F2F2442B91677300CDF3EC /* Assets.xcassets */,
@@ -67,6 +110,17 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		78F2F2532B91680C00CDF3EC /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				78F2F2542B91680C00CDF3EC /* ShareViewController.swift */,
+				78F2F2562B91680C00CDF3EC /* MainInterface.storyboard */,
+				7861AE3B2B94268A00BE24B5 /* Assets.xcassets */,
+				78F2F2592B91680C00CDF3EC /* Info.plist */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +131,34 @@
 				78F2F2392B91677000CDF3EC /* Sources */,
 				78F2F23A2B91677000CDF3EC /* Frameworks */,
 				78F2F23B2B91677000CDF3EC /* Resources */,
+				78F2F2602B91680C00CDF3EC /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				78F2F25B2B91680C00CDF3EC /* PBXTargetDependency */,
 			);
 			name = QRCodeShareSheet;
 			productName = QRCodeShareSheet;
 			productReference = 78F2F23D2B91677000CDF3EC /* QRCodeShareSheet.app */;
 			productType = "com.apple.product-type.application";
+		};
+		78F2F2512B91680C00CDF3EC /* Share */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78F2F25D2B91680C00CDF3EC /* Build configuration list for PBXNativeTarget "Share" */;
+			buildPhases = (
+				78F2F24E2B91680C00CDF3EC /* Sources */,
+				78F2F24F2B91680C00CDF3EC /* Frameworks */,
+				78F2F2502B91680C00CDF3EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Share;
+			productName = Share;
+			productReference = 78F2F2522B91680C00CDF3EC /* Share.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +171,9 @@
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					78F2F23C2B91677000CDF3EC = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					78F2F2512B91680C00CDF3EC = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -116,6 +192,7 @@
 			projectRoot = "";
 			targets = (
 				78F2F23C2B91677000CDF3EC /* QRCodeShareSheet */,
+				78F2F2512B91680C00CDF3EC /* Share */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +204,14 @@
 			files = (
 				78F2F2482B91677300CDF3EC /* Preview Assets.xcassets in Resources */,
 				78F2F2452B91677300CDF3EC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78F2F2502B91680C00CDF3EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78F2F2582B91680C00CDF3EC /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +227,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		78F2F24E2B91680C00CDF3EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78F2F2552B91680C00CDF3EC /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78F2F25B2B91680C00CDF3EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78F2F2512B91680C00CDF3EC /* Share */;
+			targetProxy = 78F2F25A2B91680C00CDF3EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		78F2F2562B91680C00CDF3EC /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78F2F2572B91680C00CDF3EC /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		78F2F2492B91677300CDF3EC /* Debug */ = {
@@ -267,6 +379,7 @@
 		78F2F24C2B91677300CDF3EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -275,11 +388,15 @@
 				DEVELOPMENT_TEAM = SU5789R8HD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QRCodeShareSheet/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "QR Share";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "The app saves the QR codes you select to the Photos app. QR Share will only save photos upon your selection, avoiding unnecessary spam or unwanted additions.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,6 +404,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = lock.QRCodeShareSheet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -296,6 +417,7 @@
 		78F2F24D2B91677300CDF3EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,11 +426,15 @@
 				DEVELOPMENT_TEAM = SU5789R8HD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QRCodeShareSheet/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "QR Share";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "The app saves the QR codes you select to the Photos app. QR Share will only save photos upon your selection, avoiding unnecessary spam or unwanted additions.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,6 +442,60 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = lock.QRCodeShareSheet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		78F2F25E2B91680C00CDF3EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SU5789R8HD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Share/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Share;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lock.QRCodeShareSheet.Share;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78F2F25F2B91680C00CDF3EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SU5789R8HD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Share/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Share;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lock.QRCodeShareSheet.Share;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -339,6 +519,15 @@
 			buildConfigurations = (
 				78F2F24C2B91677300CDF3EC /* Debug */,
 				78F2F24D2B91677300CDF3EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78F2F25D2B91680C00CDF3EC /* Build configuration list for PBXNativeTarget "Share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78F2F25E2B91680C00CDF3EC /* Debug */,
+				78F2F25F2B91680C00CDF3EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

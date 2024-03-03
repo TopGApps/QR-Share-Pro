@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct QRCodeShareSheetApp: App {
+struct QRCodeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OnboardingView()
         }
     }
 }
